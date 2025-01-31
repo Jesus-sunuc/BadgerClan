@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="BadgerClan.MauiController.MainPage"
+    Title="Bot Strategy Control">
+
+    <VerticalStackLayout Padding="20">
+        <Label 
+            Text="Select Bot Strategy"
+            FontSize="22"
+            HorizontalOptions="Center" />
+
+        <Button 
+            Text="Aggressive"
+            Clicked="OnAggressiveClicked"
+            Margin="0,10,0,0" />
+
+        <Button 
+            Text="Defensive"
+            Clicked="OnDefensiveClicked"
+            Margin="0,10,0,0" />
+
+        <Button 
+            Text="Random"
+            Clicked="OnRandomClicked"
+            Margin="0,10,0,0" />
+
+        <Label 
+            x:Name="CurrentStrategyLabel"
+            Text="Loading current strategy..."
+            FontSize="18"
+            TextColor="Red"
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand"
+            Margin="0,20,0,0" />
+    </VerticalStackLayout>
+</ContentPage>

@@ -7,7 +7,7 @@
         "Action": "Start"
       },
       {
-        "Path": "BadgerClan.Client\\BadgerClan.Client.csproj",
+        "Path": "BadgerClan.MauiController\\BadgerClan.MauiController.csproj",
         "Action": "Start"
       }
     ]
