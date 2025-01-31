@@ -9,6 +9,10 @@
       {
         "Path": "BadgerClan.MauiController\\BadgerClan.MauiController.csproj",
         "Action": "Start"
+      },
+      {
+        "Path": "BadgerClan.ControlledBotApi\\BadgerClan.ControlledBotApi.csproj",
+        "Action": "Start"
       }
     ]
   }

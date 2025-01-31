@@ -4,7 +4,7 @@ namespace BadgerClan.MauiController;
 
 public partial class MainPage : ContentPage
 {
-    private const string BotApiBaseUrl = "http://localhost:5156";
+    private const string BotApiBaseUrl = "https://localhost:7246";
 
     private readonly HttpClient httpClient = new();
 
