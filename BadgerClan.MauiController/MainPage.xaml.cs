@@ -45,17 +45,10 @@ public partial class MainPage : ContentPage
 
     private async Task SetStrategy(string strategyName)
     {
-        try
-        {
-            var response = await httpClient.PostAsJsonAsync("/api/strategy", strategyName);
-            response.EnsureSuccessStatusCode();
 
-            await DisplayAlert("Success", $"Strategy changed to {strategyName}", "OK");
-            await GetCurrentStrategy();
-        }
-        catch (Exception ex)
-        {
-            await DisplayAlert("Error", ex.Message, "OK");
-        }
+        var response = await httpClient.PostAsJsonAsync("/api/strategy", strategyName);
+        response.EnsureSuccessStatusCode();
+
+        await GetCurrentStrategy();
     }
 }
