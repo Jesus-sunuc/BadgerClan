@@ -1,5 +1,6 @@
 using BadgerClan.Logic;
 using BadgerClan.Logic.Bot;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BadgerClan.ControlledBotApi;
 
@@ -32,7 +33,7 @@ public class Program
             return new MoveResponse(moves);
         });
 
-        app.MapPost("/api/strategy", (string strategyName) =>
+        app.MapPost("/api/strategy", ([FromBody] string strategyName) =>
         {
             switch (strategyName.ToLowerInvariant())
             {
