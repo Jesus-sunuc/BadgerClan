@@ -3,15 +3,15 @@
     "Name": "Client and Server",
     "Projects": [
       {
-        "Path": "BadgerClan.Web\\BadgerClan.Web.csproj",
-        "Action": "Start"
-      },
-      {
         "Path": "BadgerClan.MauiController\\BadgerClan.MauiController.csproj",
         "Action": "Start"
       },
       {
         "Path": "BadgerClan.ControlledBotApi\\BadgerClan.ControlledBotApi.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "BadgerClan.Web\\BadgerClan.Web.csproj",
         "Action": "Start"
       }
     ]
