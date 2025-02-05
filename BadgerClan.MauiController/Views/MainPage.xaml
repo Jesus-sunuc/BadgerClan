@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="BadgerClan.MauiController.MainPage">
+
+    <VerticalStackLayout Padding="20">
+        
+        <Label x:Name="CurrentEndpointLabel"
+            Text="Current Endpoint: (none)"
+            FontSize="18"
+            Margin="0, 10, 0, 0"
+            TextColor="Green"
+            HorizontalOptions="Center" />
+
+        <Label 
+            x:Name="CurrentStrategyLabel"
+            Text="Current Strategy: (none)"
+            FontSize="18"
+            TextColor="Green"
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand" />
+
+        <Picker x:Name="EndpointPicker"
+                Title="Select Single or Team"
+                ItemsSource="{Binding AllItems}"
+                ItemDisplayBinding="{Binding DisplayName}"
+                SelectedIndexChanged="OnItemSelected" />
+
+
+        <Label 
+            Text="Select Bot Strategy"
+            FontSize="22"
+            HorizontalOptions="Center" />
+
+        <Button 
+            Text="Aggressive"
+            Clicked="OnAggressiveClicked"
+            Margin="0,10,0,0"
+            WidthRequest="250"/>
+
+        <Button 
+            Text="Defensive"
+            Clicked="OnDefensiveClicked"
+            Margin="0,10,0,0"
+            WidthRequest="250" />
+
+        <Button 
+            Text="Random"
+            Clicked="OnRandomClicked"
+            Margin="0,10,0,10"
+            WidthRequest="250"/>
+
+        <Button
+            Text="Manage Teams"
+            Clicked="OnGoToTeamPageClicked"
+            WidthRequest="250"
+            BackgroundColor="Pink"/>
+
+    </VerticalStackLayout>
+</ContentPage>
