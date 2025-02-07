@@ -20,7 +20,6 @@ public partial class MainPage : ContentPage
         InitializeComponent();
         BindingContext = this;
 
-        // 1) Add single endpoints
         AllItems.Add(new ApiEndpoint("Local Dev", "https://localhost:7246"));
         AllItems.Add(new ApiEndpoint("Azure Bot1", "https://badgerclan-bot1-ewb6dfcncae0dnhj.westus-01.azurewebsites.net"));
         AllItems.Add(new ApiEndpoint("Azure Bot2", "https://badgerclan-bot2-csffdzdybvgfhma7.westus-01.azurewebsites.net"));

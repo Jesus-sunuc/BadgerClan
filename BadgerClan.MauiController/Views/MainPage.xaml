@@ -25,8 +25,9 @@
                 Title="Select Single or Team"
                 ItemsSource="{Binding AllItems}"
                 ItemDisplayBinding="{Binding DisplayName}"
-                SelectedIndexChanged="OnItemSelected" />
-
+                SelectedIndexChanged="OnItemSelected"
+                Margin="0, 20, 0, 20"
+                WidthRequest="250"/>
 
         <Label 
             Text="Select Bot Strategy"
