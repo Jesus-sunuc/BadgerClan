@@ -6,23 +6,21 @@ namespace BadgerClan.GrpcBotApi.Services;
 
 public class BotStrategyService : BotStrategy.BotStrategyBase
 {
-    private static IBot _currentBot = new NothingBot();
-
     public override Task<SetStrategyReply> SetStrategy(SetStrategyRequest request, ServerCallContext context)
     {
         switch (request.StrategyName.ToLowerInvariant())
         {
             case "aggressive":
-                _currentBot = new AggressiveBot();
+                StrategyState.CurrentBot = new AggressiveBot();
                 break;
             case "defensive":
-                _currentBot = new DefensiveBot();
+                StrategyState.CurrentBot = new DefensiveBot();
                 break;
             case "random":
-                _currentBot = new RandomBot();
+                StrategyState.CurrentBot = new RandomBot();
                 break;
             default:
-                _currentBot = new NothingBot();
+                StrategyState.CurrentBot = new NothingBot();
                 break;
         }
 
@@ -34,9 +32,10 @@ public class BotStrategyService : BotStrategy.BotStrategyBase
 
     public override Task<GetCurrentStrategyReply> GetCurrentStrategy(GetCurrentStrategyRequest request, ServerCallContext context)
     {
+        var current = StrategyState.CurrentBot.GetType().Name;
         return Task.FromResult(new GetCurrentStrategyReply
         {
-            CurrentStrategy = _currentBot.GetType().Name
+            CurrentStrategy = current
         });
     }
 }
