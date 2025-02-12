@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadgerClan.MauiController",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadgerClan.ControlledBotApi", "BadgerClan.ControlledBotApi\BadgerClan.ControlledBotApi.csproj", "{87ED78C8-C076-4FE2-8DAC-70A812DBC5D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadgerClan.GrpcBotApi", "BadgerClan.GrpcBotApi\BadgerClan.GrpcBotApi.csproj", "{55B6D51C-6EED-4FFB-AF28-031CD9F616BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,12 +47,17 @@ Global
 		{2ED5E945-C282-4CA8-A3C7-A67C4B5385F1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DDCBD1A3-65C7-481F-BF88-5839F63F7381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DDCBD1A3-65C7-481F-BF88-5839F63F7381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDCBD1A3-65C7-481F-BF88-5839F63F7381}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{DDCBD1A3-65C7-481F-BF88-5839F63F7381}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDCBD1A3-65C7-481F-BF88-5839F63F7381}.Release|Any CPU.Build.0 = Release|Any CPU
 		{87ED78C8-C076-4FE2-8DAC-70A812DBC5D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{87ED78C8-C076-4FE2-8DAC-70A812DBC5D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87ED78C8-C076-4FE2-8DAC-70A812DBC5D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87ED78C8-C076-4FE2-8DAC-70A812DBC5D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55B6D51C-6EED-4FFB-AF28-031CD9F616BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55B6D51C-6EED-4FFB-AF28-031CD9F616BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55B6D51C-6EED-4FFB-AF28-031CD9F616BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55B6D51C-6EED-4FFB-AF28-031CD9F616BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

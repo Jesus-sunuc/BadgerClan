@@ -1,0 +1,21 @@
+syntax = "proto3";
+option csharp_namespace = "BadgerClan.GrpcBotApi";
+
+package bot;
+
+service BotStrategy {
+  rpc SetStrategy (SetStrategyRequest) returns (SetStrategyReply);
+  rpc GetCurrentStrategy (GetCurrentStrategyRequest) returns (GetCurrentStrategyReply);
+}
+
+message SetStrategyRequest {
+  string strategyName = 1;
+}
+message SetStrategyReply {
+  string message = 1;
+}
+
+message GetCurrentStrategyRequest {}
+message GetCurrentStrategyReply {
+  string currentStrategy = 1;
+}
