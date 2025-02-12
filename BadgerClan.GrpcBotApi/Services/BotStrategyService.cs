@@ -1,6 +1,6 @@
-using Grpc.Core;
 using BadgerClan.GrpcBotApi;
 using BadgerClan.Logic.Bot;
+using Grpc.Core;
 
 namespace BadgerClan.GrpcBotApi.Services;
 

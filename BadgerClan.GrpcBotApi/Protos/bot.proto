@@ -1,6 +1,5 @@
 syntax = "proto3";
 option csharp_namespace = "BadgerClan.GrpcBotApi";
-
 package bot;
 
 service BotStrategy {
