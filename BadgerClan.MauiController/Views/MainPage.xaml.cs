@@ -1,5 +1,4 @@
 ﻿using BadgerClan.MauiController.Models;
-using BadgerClan.MauiController.Views;
 using System.Collections.ObjectModel;
 using System.Net.Http.Json;
 

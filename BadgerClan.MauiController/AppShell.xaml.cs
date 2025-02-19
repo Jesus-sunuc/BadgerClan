@@ -1,5 +1,4 @@
-﻿using BadgerClan.MauiController.Views;
-
+﻿
 namespace BadgerClan.MauiController
 {
     public partial class AppShell : Shell
@@ -7,7 +6,6 @@ namespace BadgerClan.MauiController
         public AppShell()
         {
             InitializeComponent();
-            Routing.RegisterRoute("TeamPage", typeof(TeamPage));
         }
     }
 }

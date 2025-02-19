@@ -12,8 +12,4 @@
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
-    <ShellContent
-        Title="Teams"
-        ContentTemplate="{DataTemplate views:TeamPage}"
-        Route="TeamPage" />
 </Shell>
